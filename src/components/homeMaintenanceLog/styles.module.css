@@ -1,0 +1,89 @@
+.homeMaintenanceLog {
+    .heading { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 19px 0 23px; }
+    .label { color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .17em; }
+    .heading h1 { margin-top: 9px; font-size: clamp(40px, 4.5vw, 57px); font-weight: 780; line-height: 1.02; letter-spacing: -.055em; }
+    .heading h1 span { color: #737e87; font-family: Georgia, serif; font-style: italic; font-weight: 450; }
+    .description { margin-top: 12px; color: var(--muted); font-size: 14px; }
+    .houseCard { display: grid; width: 210px; gap: 8px; padding: 17px; border: 1px solid #d8dfe3; border-radius: 13px; background: #fff; box-shadow: 0 5px 18px #28333d09; }
+    .houseCard svg { width: 25px; height: 25px; color: var(--accent); }
+    .houseCard span { color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .13em; }
+    .houseCard strong { font-size: 14px; }
+    .houseCard small { color: var(--muted); font-size: 11px; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; margin-bottom: 15px; }
+    .metric { display: grid; min-height: 100px; align-content: center; gap: 3px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 11px; background: var(--card); }
+    .metric span { color: var(--muted); font-size: 11px; }
+    .metric strong { font-size: 25px; font-weight: 750; }
+    .metric small { color: var(--muted); font-size: 10px; }
+    .metric .warning { color: var(--accent); }
+    .contentGrid { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 14px; align-items: start; }
+    .taskPanel, .sidePanel { border: 1px solid var(--line); border-radius: 13px; background: var(--card); }
+    .taskPanel { padding: 19px; }
+    .panelHeading { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .panelHeading h2 { font-size: 19px; font-weight: 750; }
+    .panelHeading p { margin-top: 2px; color: var(--muted); font-size: 11px; }
+    .areaFilter { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 11px; }
+    .areaFilter select { min-height: 34px; padding: 0 26px 0 8px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: #f7f8f9; font-size: 11px; }
+    .tabs { display: flex; gap: 4px; margin-top: 15px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    .tabs button { min-height: 31px; padding: 0 10px; border: 0; border-radius: 7px; color: var(--muted); background: transparent; font-size: 11px; font-weight: 650; }
+    .tabs .activeTab { color: #fff; background: #353e47; }
+    .taskRow { display: grid; grid-template-columns: 34px minmax(0, 1fr) 74px 74px 28px; align-items: center; gap: 10px; min-height: 70px; border-bottom: 1px solid #edf0f2; }
+    .taskIcon, .overdueIcon, .completeIcon { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 9px; color: #b45f3a; background: #f8ebe5; }
+    .overdueIcon { color: #fff; background: var(--accent); }
+    .completeIcon { color: #397b58; background: #e6f2e9; }
+    .taskRow > span svg { width: 16px; }
+    .taskCopy h3 { font-size: 12px; font-weight: 700; }
+    .taskCopy p { margin-top: 3px; color: var(--muted); font-size: 10px; }
+    .taskCopy p span { padding: 0 3px; }
+    .dueDate { display: grid; text-align: right; }
+    .dueDate small { color: var(--muted); font-size: 9px; }
+    .dueDate strong { font-size: 11px; }
+    .doneButton, .reopenButton { min-height: 30px; padding: 0 7px; border: 1px solid var(--line); border-radius: 7px; color: var(--ink); background: #f8f9fa; font-size: 10px; font-weight: 700; }
+    .doneButton:hover, .reopenButton:hover { border-color: var(--accent); box-shadow: 0 2px 8px #29333b14; }
+    .deleteButton { display: grid; width: 28px; height: 28px; place-items: center; border: 0; border-radius: 7px; color: #879098; background: transparent; }
+    .deleteButton:hover { box-shadow: 0 2px 8px #29333b18; color: var(--accent); }
+    .deleteButton svg { width: 14px; }
+    .emptyState { padding: 25px 0; color: var(--muted); font-size: 12px; text-align: center; }
+    .addForm { display: grid; grid-template-columns: 1.25fr 1.2fr .8fr .95fr .7fr auto; align-items: end; gap: 8px; margin-top: 18px; padding: 14px; border-radius: 10px; background: #f2f4f6; }
+    .formHeading { display: flex; align-items: center; gap: 7px; align-self: center; }
+    .formHeading > svg { color: var(--accent); }
+    .formHeading strong { font-size: 11px; }
+    .formHeading p { color: var(--muted); font-size: 9px; }
+    .addForm label { display: grid; gap: 4px; color: var(--muted); font-size: 9px; font-weight: 650; }
+    .addForm input { width: 100%; min-width: 0; min-height: 34px; padding: 0 7px; border: 1px solid var(--line); border-radius: 6px; outline-color: var(--accent); background: white; font-size: 10px; }
+    .addButton { min-height: 34px; padding: 0 9px; border: 0; border-radius: 7px; color: #fff; background: #353e47; font-size: 10px; font-weight: 700; }
+    .addButton:hover { box-shadow: 0 3px 10px #29333b2b; }
+    .sidePanel { padding: 20px; }
+    .sideIcon { display: grid; width: 42px; height: 42px; place-items: center; margin-bottom: 16px; border-radius: 11px; color: var(--accent); background: #f8ebe5; font-size: 19px; }
+    .sidePanel h2 { margin-top: 8px; font-family: Georgia, serif; font-size: 23px; line-height: 1.12; }
+    .sidePanel > p:not(.label) { margin-top: 9px; color: var(--muted); font-size: 11px; line-height: 1.6; }
+    .sideRule { display: flex; justify-content: space-between; margin-top: 22px; padding: 12px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 11px; }
+    .sideRule span { color: var(--muted); }
+    .sideRule strong { color: var(--accent); }
+    .storageNote { font-size: 10px !important; }
+    @media (max-width: 1000px) {
+        .contentGrid { grid-template-columns: 1fr; }
+        .sidePanel { display: grid; grid-template-columns: 52px 1fr; column-gap: 12px; }
+        .sideIcon { grid-row: span 2; margin: 0; }
+        .sidePanel .label, .sidePanel h2 { grid-column: 2; }
+        .sidePanel > p:not(.label), .sideRule { grid-column: 1 / -1; }
+    }
+    @media (max-width: 700px) {
+        .heading { align-items: flex-start; flex-direction: column; }
+        .houseCard { width: 100%; }
+        .metrics { grid-template-columns: 1fr 1fr; }
+        .taskPanel { padding: 13px; }
+        .panelHeading { align-items: flex-start; flex-direction: column; }
+        .areaFilter { width: 100%; justify-content: space-between; }
+        .areaFilter select { flex: 1; }
+        .tabs { overflow: auto; }
+        .tabs button { white-space: nowrap; }
+        .taskRow { grid-template-columns: 32px minmax(0, 1fr) 58px 62px 26px; gap: 5px; }
+        .taskCopy p { font-size: 9px; }
+        .dueDate strong { font-size: 10px; }
+        .doneButton, .reopenButton { padding: 0 4px; font-size: 9px; }
+        .addForm { grid-template-columns: 1fr 1fr; }
+        .formHeading { grid-column: 1 / -1; }
+        .addForm label:first-of-type { grid-column: 1 / -1; }
+        .addButton { min-height: 36px; }
+    }
+}
